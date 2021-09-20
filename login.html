@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Twitter Login</title>
   </head>
   <body>
-    <div>
-      <form id="login-form" action="index.html">
-        <input
-          type="text"
-          placeholder="닉네임을 입력해주세요"
-          id="login-input"
-        />
-        <input type="submit" value="Log in" id="login-submit" />
-      </form>
-    </div>
+    <main id="login-main">
+      <div id="login-css">
+        <i class="fab fa-twitter fa-3x"></i>
+        <form id="login-form" action="index.html">
+          <input
+            type="text"
+            placeholder="닉네임을 입력해주세요"
+            id="login-input"
+          />
+          <input type="submit" value="Log in" id="login-submit" />
+        </form>
+      </div>
+      <button class="darkBtn">
+        <i class="fas fa-moon fa-3x"></i>
+      </button>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/login.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

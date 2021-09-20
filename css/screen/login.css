@@ -1,0 +1,49 @@
+#login-main {
+  background-color: var(--background);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#login-css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#login-css i {
+  color: var(--blue);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-input {
+  background-color: var(--inputBackground);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#login-input:focus {
+  border: 1.8px solid var(--blue);
+}
+#login-submit {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 200px;
+  border: none;
+  background-color: var(--blue);
+}
+#login-submit:hover {
+  background-color: var(--blue_hover);
+}

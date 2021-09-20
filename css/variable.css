@@ -1,0 +1,15 @@
+:root {
+  --blue: rgb(26, 140, 216);
+  --blue_hover: rgba(26, 140, 216, 0.8);
+}
+
+:root[color-theme="light"] {
+  --background: #ffffff;
+  --darkBtnHover: rgba(0, 0, 0, 0.1);
+}
+
+:root[color-theme="dark"] {
+  --background: #181818;
+  --inputBackground: #121212;
+  --darkBtnHover: rgba(255, 255, 255, 0.1);
+}

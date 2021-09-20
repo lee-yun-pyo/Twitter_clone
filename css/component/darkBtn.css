@@ -1,0 +1,17 @@
+.darkBtn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+.darkBtn:hover {
+  background-color: var(--darkBtnHover);
+}
+.darkBtn i {
+  color: #505050;
+}
+/* color: #989a9e; */
