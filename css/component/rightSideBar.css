@@ -1,0 +1,36 @@
+#phoneNumber-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phoneNumber-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.sponsored {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+.sponsored:hover {
+  background-color: var(--darkBtnHover);
+  border-radius: var(--navBorderRadius);
+}
+.sponsored-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.sponsored-title {
+  color: var(--textIconColor);
+  margin-bottom: 7px;
+}
+.sponsored-url {
+  color: var(--textIconColor);
+}
+.sponsored-text p {
+  color: var(--textIconColor);
+}

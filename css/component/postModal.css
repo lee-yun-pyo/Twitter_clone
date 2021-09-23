@@ -1,0 +1,89 @@
+.postModal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postModal-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.postUpload {
+  z-index: 1;
+  width: 500px;
+  height: 200px;
+  background-color: var(--navBackground);
+  padding: 8px;
+  border-radius: var(--navBorderRadius);
+}
+
+.postUpload-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postUpload-title span {
+  font-weight: 600;
+  color: var(--titleTextColor);
+}
+.postUpload-title button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+.postUpload-closeBtn {
+  cursor: pointer;
+}
+.postUpload-borderLine {
+  height: 1px;
+  width: 100%;
+  border-bottom: var(--borderLine);
+  margin: 8px 0;
+}
+
+.postUpload-imgName {
+  display: flex;
+  align-items: center;
+}
+
+.postUpload-imgName img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.postUpload-imgName span {
+  font-weight: 600;
+  color: var(--titleTextColor);
+}
+.postUpload-text {
+  padding: 15px 0;
+  color: var(--inputColor);
+  background-color: var(--navBackground);
+  border: none;
+  width: 100%;
+  font-size: 24px;
+  outline: none;
+}
+.postUpload-btn {
+  cursor: pointer;
+  background-color: var(--blue);
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  font-weight: 600;
+  color: var(--titleTextColor);
+  border-radius: var(--navBorderRadius);
+}
+
+.postUpload-btn:hover {
+  background-color: var(--blue_hover);
+}

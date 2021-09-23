@@ -4,21 +4,207 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="img/twitter.ico" rel="shortcut icon" type="image/x-icon">
     <title>Twitter Home</title>
   </head>
   <body>
-    <h1>이름</h1>
-    <form id="post-upload">
-      <input type="text" placeholder="anything" id="post-input" />
-      <input type="submit" value="첨가" />
-    </form>
-    <div id="post-entitle">
-      <div class="post-one">
-        <p></p>
+    <nav class="navBar">
+      <div class="navBar-column">
+        <a href="index.html">
+          <i class="fab fa-twitter fa-2x"></i>
+          <h1>Twitter</h1>
+        </a>
+      </div>
+      <div class="navBar-column">
+        <input type="text" placeholder="Twitter 검색" />
+      </div>
+      <div class="navBar-column">
+        <a href="index.html">
+          <img src="img/user.png" alt="user">
+          <h3 class="nickname">nickname</h3>
+        </a>
+        <i class="fas fa-comment fa-lg"></i> <i class="fas fa-bell fa-lg"></i>
+      </div>
+    </nav>
+    <main id="index-main">
+      <div class="main-row">
+        <div class="sideBar">
+          <ul>
+            <li class="sideBar-list">
+              <a href="index.html">
+                <img src="img/user.png" class="leftSideBar-img" alt="user">
+                <p class="nickname">nickname</h3>
+              </a>
+            </li>
+            <li class="sideBar-list">
+              <i class="fas fa-user-friends fa-lg"></i>
+              <p>친구</p>
+            </li>
+            <li class="sideBar-list">
+              <i class="fas fa-bookmark fa-lg"></i>
+              <p>저장됨</p>
+            </li>
+            <li class="sideBar-list">
+              <i class="fas fa-users fa-lg"></i>
+              <p>그룹</p>
+            </li>
+            <li class="sideBar-list">
+              <i class="fas fa-desktop fa-lg"></i>
+              <p>Watch</p>
+            </li>
+            <li class="sideBar-list">
+              <i class="fas fa-history fa-lg"></i>
+              <p>과거의 오늘</p>
+            </li>
+            <li class="sideBar-list">
+              <i class="fas fa-chevron-down fa-lg"></i>
+              <p>더보기</p>
+            </li>
+          </ul>
+        </div>
+        <div class="sideBar">
+          <p class="sideBar-title">내 바로가기</p>
+          <ul>
+            <li class="sideBar-list">
+              <img src="img/nomad.jpg" class="leftSideBar-img" alt="nomad">
+              <p>노마드 코더</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-row">
+        <div id="chat">
+          <div class="chat-main">
+            <img src="img/user.png" class="chat-img">
+            <button id="chat-text">무슨 생각을 하고 계신가요?</button>
+          </div>
+          <div class="chat-sub">
+            <div class="chat-sub__icon chat-sub__icon-color">
+              <i class="fas fa-video fa-lg"></i>
+              <p>라이브 방송</p>
+            </div>
+            <div class="chat-sub__icon chat-sub__icon-color">
+              <i class="fas fa-images fa-lg"></i>
+              <p>사진/동영상</p>
+            </div>
+            <div class="chat-sub__icon chat-sub__icon-color">
+              <i class="far fa-laugh-squint fa-lg"></i>
+              <p>기분/활동</p>
+            </div>
+          </div>
+        </div>
+        <div  id="postMain">
+        <div class="post">
+          <div class="post-name">
+            <div class="post-name__img-text">
+              <img src="img/nomad.jpg" class="chat-img">
+              <div class="post-name__text">
+                <span class="">nomadcoders</span>
+              </div>
+            </div>
+            <i class="fas fa-ellipsis-h icon_hover"></i>
+          </div>
+          <p class="post-content">트위터 클론코딩</p>
+          <div class="post-likeCommnet">
+            <div class="chat-sub__icon">
+              <i class="far fa-thumbs-up"></i>
+              <p>좋아요</p>
+            </div>
+            <div class="chat-sub__icon">
+              <i class="fas fa-trash"></i>
+              <p>삭제</p>
+            </div>
+          </div>
+          <div class="post-comment">
+            <img src="img/user.png" class="phoneNumber-img">
+            <div class="post-comment__text">
+              <input type="text" placeholder="댓글을 입력하세요...">
+              <p>글을 게시하려면 Enter키를 누르세요.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="main-row">
+        <div class="sideBar">
+          <p class="sideBar-title">Sponsored</p>
+          <a href="https://nomadcoders.co/" target="_blank">
+            <div class="sponsored">
+              <img src="img/nomad.jpg" class="sponsored-img">
+              <div class="sponsored-text">
+                <p class="sponsored-title">철없던 니코쌤의 무료강의</p>
+                <p class="sponsored-url">nomadcoders.co</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://nomadcoders.co/" target="_blank">
+            <div class="sponsored">
+              <img src="img/nomad.jpg" class="sponsored-img">
+              <div class="sponsored-text">
+                <p class="sponsored-title">저세상 무료강의, 노마드코더</p>
+                <p class="sponsored-url">nomadcoders.co</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="sideBar">
+          <div id="phoneNumber-title">
+            <p class="sideBar-title">연락처</p>
+            <div id="phoneNumber-title__icon">
+              <i class="fas fa-video icon_hover"></i>
+              <i class="fas fa-search icon_hover"></i>
+              <i class="fas fa-ellipsis-h icon_hover"></i>
+            </div>
+          </div>
+          <ul>
+            <li class="sideBar-list">
+                <img src="img/user.png" class="phoneNumber-img" alt="user">
+                <p>Kim</h3>
+            </li>
+            <li class="sideBar-list">
+                <img src="img/user.png" class="phoneNumber-img" alt="user">
+                <p>Park</h3>
+            </li>
+            <li class="sideBar-list">
+                <img src="img/user.png" class="phoneNumber-img" alt="user">
+                <p>Son</h3>
+            </li>
+            <li class="sideBar-list">
+                <img src="img/user.png" class="phoneNumber-img" alt="user">
+                <p>Han</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <button class="darkBtn">
+      <i class="fas fa-moon fa-3x"></i>
+    </button>
+    <div class="postModal hidden">
+      <div class="postModal-overlay"></div>
+      <div class="postUpload">
+        <div class="postUpload-title">
+          <div></div>
+          <span>게시물 만들기</span>
+          <button class="postUpload-closeBtn">
+            <i class="fas fa-times fa-2x"></i>
+          </button>
+        </div>
+        <div class="postUpload-borderLine"></div>
+        <div class="postUpload-imgName">
+          <img src="img/user.png">
+          <span class="nickname">nickname</span>
+        </div>
+        <input type="text" class="postUpload-text" placeholder="님 무슨 생각을 하고 계신가요?">
+        <button class="postUpload-btn">게시</button>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
     <script src="js/postUpload.js"></script>
   </body>
 </html>

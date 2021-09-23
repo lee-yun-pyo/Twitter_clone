@@ -1,0 +1,24 @@
+#index-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-row:first-child {
+  width: 20%;
+}
+.main-row:nth-child(2) {
+  width: 45%;
+}
+.main-row:last-child {
+  width: 20%;
+}
+
+.icon_hover {
+  padding: 10px;
+}
+
+.icon_hover:hover {
+  background-color: var(--darkBtnHover);
+  border-radius: 50%;
+}

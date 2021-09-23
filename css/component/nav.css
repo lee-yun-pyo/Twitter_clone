@@ -1,0 +1,75 @@
+.navBar {
+  background-color: var(--navBackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+}
+.navBar-column {
+  width: 33%;
+}
+.navBar-column:first-child a {
+  display: flex;
+  align-items: center;
+}
+.navBar-column:first-child a i {
+  color: var(--blue);
+}
+
+.navBar-column:first-child a h1 {
+  color: var(--textIconColor);
+  font-size: 25px;
+  margin-left: 10px;
+}
+.navBar-column:last-child {
+  display: flex;
+  align-items: center;
+}
+.navBar-column:last-child img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.navBar-column:last-child a {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navBar-column:last-child a i {
+  padding: 10px;
+  color: white;
+}
+.navBar-column:last-child a h3 {
+  color: var(--textIconColor);
+  font-size: 15px;
+  margin-left: 8px;
+}
+.navBar-column:last-child > i {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.navBar-column:last-child i {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--darkBtnHover);
+  color: var(--textIconColor);
+}
+
+.navBar-column:nth-child(2) input {
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--inputBackground);
+  color: var(--textIconColor);
+}
+
+.navBar-column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.navBar-column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,15 +1,33 @@
 :root {
   --blue: rgb(26, 140, 216);
   --blue_hover: rgba(26, 140, 216, 0.8);
+  --navBorderRadius: 10px;
 }
 
 :root[color-theme="light"] {
-  --background: #ffffff;
+  --background: rgb(240, 242, 245);
+  --backgroundHover: rgba(35, 79, 145, 0.1);
+  --navBackground: rgb(255, 255, 255);
+  --inputBackground: rgb(240, 242, 245);
+  --inputBackgroundHover: rgba(240, 242, 245, 0.7);
+  --inputBorder: 1px solid rgba(0, 0, 0, 0.2);
+  --inputColor: black;
   --darkBtnHover: rgba(0, 0, 0, 0.1);
+  --textIconColor: rgb(0, 0, 0);
+  --borderLine: 1px solid rgba(0, 0, 0, 0.2);
+  --titleTextColor: rgba(0, 0, 0, 0.7);
 }
 
 :root[color-theme="dark"] {
-  --background: #181818;
-  --inputBackground: #121212;
+  --background: rgb(24, 25, 26);
+  --backgroundHover: rgba(24, 25, 26, 0.1);
+  --navBackground: rgb(36, 37, 38);
+  --inputBackground: rgb(58, 59, 60);
+  --inputBackgroundHover: rgba(58, 59, 60, 0.7);
+  --inputBorder: 1px solid rgba(255, 255, 255, 0.2);
+  --inputColor: white;
   --darkBtnHover: rgba(255, 255, 255, 0.1);
+  --textIconColor: rgb(255, 255, 255);
+  --borderLine: 1px solid rgba(255, 255, 255, 0.2);
+  --titleTextColor: rgba(255, 255, 255, 0.7);
 }
