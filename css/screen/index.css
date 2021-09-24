@@ -22,3 +22,57 @@
   background-color: var(--darkBtnHover);
   border-radius: 50%;
 }
+.navBar {
+  background-color: var(--navBackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+}
+.postUpload {
+  z-index: 1;
+  width: 500px;
+  height: 200px;
+  background-color: var(--navBackground);
+  padding: 8px;
+  border-radius: var(--navBorderRadius);
+}
+@media screen and (max-width: 700px) {
+  .navBar {
+    justify-content: space-between;
+  }
+  .main-row:first-child,
+  .main-row:last-child,
+  .navBar .navBar-column:nth-child(2) {
+    display: none;
+  }
+  .main-row:nth-child(2) {
+    width: 500px;
+    padding: 0 10px;
+  }
+  #index-main {
+    justify-content: center;
+  }
+  .postModal {
+  }
+  .postUpload {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1060px) {
+  .main-row:first-child {
+    display: none;
+  }
+  #index-main {
+    justify-content: space-around;
+  }
+  .main-row:nth-child(2) {
+    width: 500px;
+    margin-right: 20px;
+  }
+  .main-row:last-child {
+    width: 30%;
+    margin-right: 10px;
+  }
+}

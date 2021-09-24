@@ -15,9 +15,11 @@
 @import "component/postModal.css";
 
 /* font-family */
-@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
 body {
   background-color: var(--background);
+  font-family: "Cabin", sans-serif;
 }
 
 .unshowing {

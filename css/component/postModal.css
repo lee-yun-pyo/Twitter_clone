@@ -14,14 +14,6 @@
   height: 100%;
   position: absolute;
 }
-.postUpload {
-  z-index: 1;
-  width: 500px;
-  height: 200px;
-  background-color: var(--navBackground);
-  padding: 8px;
-  border-radius: var(--navBorderRadius);
-}
 
 .postUpload-title {
   display: flex;

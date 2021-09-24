@@ -43,6 +43,7 @@
   padding: 8px 20px;
   border-radius: 200px;
   border: none;
+  font-family: "Cabin", sans-serif;
   background-color: var(--blue);
 }
 #login-submit:hover {
